@@ -1,0 +1,35 @@
+.nav-link {
+    @apply text-secondary text-[16px]; /* Default styles for the links */
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+
+  .nav-link:hover
+   {
+    @apply text-main; 
+  }
+  
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--main-color); /* Color of the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition */
+    transform: translateX(-50%); /* Center the underline */
+  }
+  
+  /* Hover effect for the underline */
+  .nav-link:hover::after
+   {
+    width: 70%; /* Full width when hovered or active */
+    left: 50%;
+    transform: translateX(-50%); /* Ensure it stays centered */
+  }
+  

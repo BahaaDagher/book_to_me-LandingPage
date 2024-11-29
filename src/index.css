@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/neo-sans-arabic');
+
+:root {
+  --main-color: #00CECC; /* Example main color */
+  --sec-color: #002E46; /* Example secondary color */
+  --gray1-color: #F8F8FA; /* Example secondary color */
+  --gray2-color: #667085; /* Example secondary color */
+  --gray3-color: #E6E7E9; /* Example secondary color */
+  --margin-l: 160px; /* Example margin */
+  --margin-m: 100px; /* Example margin */
+  --info-height : 56px ;  
+  --navbar-height : 75px ;  
+  --scale-width : 75% ; 
+}
+body {
+  margin: 0;
+  font-family: 'Neo Sans Arabic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction : rtl;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
